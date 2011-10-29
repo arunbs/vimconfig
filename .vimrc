@@ -2,7 +2,7 @@ filetype off
 let mapleader=","
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-
+colors desert
 set foldmethod=indent
 set foldlevel=99
 
