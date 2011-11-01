@@ -10,7 +10,9 @@ map <leader>td <Plug>TaskList
 
 map <leader>g :GundoToggle<CR>
 
-
+set backup
+set backupdir=/home/arunbs/.vim_backupdir
+set dir=/home/arunbs/.vim_backupdir
 syntax on                           " syntax highlighing
 filetype on                          " try to detect filetypes
 filetype plugin indent on    " enable loading indent file for filetype
@@ -25,3 +27,5 @@ set completeopt=menuone,longest,preview
 map <leader>n :NERDTreeToggle<CR>
 
 nmap <leader>a <Esc>:Ack!
+nmap <leader>l <C-W>w
+nmap <leader>b <C-W>h
