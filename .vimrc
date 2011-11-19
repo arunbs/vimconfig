@@ -6,7 +6,7 @@ colors desert
 set foldmethod=indent
 set foldlevel=99
 
-map <leader>td <Plug>TaskList
+map <leader>tt <Plug>TaskList
 
 map <leader>g :GundoToggle<CR>
 
@@ -20,6 +20,7 @@ set noautoindent
 set smartindent
 
 let g:pep8_map='<leader>8'
+autocmd filetype python expandtab
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
@@ -28,4 +29,15 @@ map <leader>n :NERDTreeToggle<CR>
 
 nmap <leader>a <Esc>:Ack!
 nmap <leader>l <C-W>w
-nmap <leader>b <C-W>h
+nmap <leader>h <C-W>h
+
+set hidden
+set showmatch
+set history=1000
+set undolevels=1000
+set title
+set wildignore=*.swp, *.bak,*.pyc
+autocmd filetype python expandtab
+"Use Q to reformat the current paragraph or selection in visual mode
+vmap Q gq
+nmap Q gqap
