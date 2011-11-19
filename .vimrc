@@ -36,7 +36,6 @@ set showmatch
 set history=1000
 set undolevels=1000
 set title
-set wildignore=*.swp, *.bak,*.pyc
 autocmd filetype python expandtab
 "Use Q to reformat the current paragraph or selection in visual mode
 vmap Q gq
